@@ -1,0 +1,133 @@
+[
+  {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "Backend Developer",
+    "companyName": "TechCorp",
+    "location": "Brisbane",
+    "jobDescription": "Looking for a Node.js backend developer with API and database experience.",
+    "fitScore": 85,
+    "recommendation": "APPLY",
+    "result": {
+      "matchedSkills": ["Node.js", "PostgreSQL", "TypeScript"],
+      "missingSkills": ["AWS", "Docker"],
+      "strengths": [
+        "Strong backend API development",
+        "Good database design skills"
+      ],
+      "risks": ["Limited cloud deployment experience"],
+      "resumeTips": [
+        "Highlight backend project impact",
+        "Add metrics (e.g. API response time improvements)"
+      ],
+      "actionPlan": [
+        "Learn AWS basics",
+        "Deploy a project using Docker",
+        "Practice system design"
+      ]
+    }
+  },
+  {
+    "userEmail": "emma.williams@test.com",
+    "jobTitle": "Full Stack Developer",
+    "companyName": "StartupX",
+    "location": "Sydney",
+    "jobDescription": "React + Node.js full stack role.",
+    "fitScore": 70,
+    "recommendation": "CONSIDER",
+    "result": {
+      "matchedSkills": ["React", "JavaScript"],
+      "missingSkills": ["TypeScript", "Testing"],
+      "strengths": ["Strong UI/UX sense", "Good React fundamentals"],
+      "risks": ["Weak backend experience"],
+      "resumeTips": ["Add backend projects", "Include testing experience"],
+      "actionPlan": [
+        "Learn TypeScript",
+        "Build full-stack project",
+        "Practice Jest testing"
+      ]
+    }
+  },
+  {
+    "userEmail": "liam.brown@test.com",
+    "jobTitle": "Backend Engineer",
+    "companyName": "DataFlow",
+    "location": "Melbourne",
+    "jobDescription": "Python backend role using FastAPI.",
+    "fitScore": 90,
+    "recommendation": "APPLY",
+    "result": {
+      "matchedSkills": ["Python", "FastAPI", "PostgreSQL"],
+      "missingSkills": ["Kubernetes"],
+      "strengths": ["Excellent backend development", "Strong API design"],
+      "risks": ["Limited DevOps exposure"],
+      "resumeTips": [
+        "Highlight scalability projects",
+        "Mention API performance optimization"
+      ],
+      "actionPlan": ["Learn Kubernetes basics", "Deploy microservices project"]
+    }
+  },
+  {
+    "userEmail": "noah.garcia@test.com",
+    "jobTitle": "Backend Developer",
+    "companyName": "Cloudify",
+    "location": "Perth",
+    "jobDescription": "NestJS backend with cloud integration.",
+    "fitScore": 65,
+    "recommendation": "CONSIDER",
+    "result": {
+      "matchedSkills": ["TypeScript", "NestJS"],
+      "missingSkills": ["AWS", "CI/CD"],
+      "strengths": ["Good TypeScript understanding"],
+      "risks": ["No cloud deployment experience"],
+      "resumeTips": ["Add cloud projects", "Highlight backend APIs"],
+      "actionPlan": ["Learn AWS EC2 & S3", "Set up CI/CD pipeline"]
+    }
+  },
+  {
+    "userEmail": "william.rodriguez@test.com",
+    "jobTitle": "Senior Backend Engineer",
+    "companyName": "ScaleTech",
+    "location": "Sydney",
+    "jobDescription": "Distributed backend systems and scaling.",
+    "fitScore": 92,
+    "recommendation": "APPLY",
+    "result": {
+      "matchedSkills": ["Node.js", "Redis", "Docker"],
+      "missingSkills": ["Kafka"],
+      "strengths": [
+        "Strong system architecture knowledge",
+        "Experience in scaling services"
+      ],
+      "risks": ["Limited streaming experience"],
+      "resumeTips": [
+        "Highlight distributed systems experience",
+        "Mention performance tuning"
+      ],
+      "actionPlan": ["Learn Kafka", "Build event-driven system"]
+    }
+  },
+  {
+    "userEmail": "admin@test.com",
+    "jobTitle": "Technical Lead",
+    "companyName": "CareerFit",
+    "location": "Brisbane",
+    "jobDescription": "Lead backend architecture and team.",
+    "fitScore": 95,
+    "recommendation": "APPLY",
+    "result": {
+      "matchedSkills": ["System Design", "Node.js", "Leadership"],
+      "missingSkills": [],
+      "strengths": ["Strong leadership", "Excellent architecture design"],
+      "risks": [],
+      "resumeTips": [
+        "Highlight leadership experience",
+        "Include team achievements"
+      ],
+      "actionPlan": [
+        "Mentor junior developers",
+        "Refine system design knowledge"
+      ]
+    }
+  }
+]
