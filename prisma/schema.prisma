@@ -32,6 +32,8 @@ model User {
 model Profile {
   id              String          @id @default(uuid())
   userId          String          @unique
+  avatarUrl String? 
+  
   skills          String[]
   experienceLevel ExperienceLevel
   workEligibility WorkEligibility?
