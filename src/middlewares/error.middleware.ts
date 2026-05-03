@@ -3,6 +3,7 @@ import type { Request, Response, NextFunction } from "express";
 type ErrorWithStatus = Error & {
   statusCode?: number;
   status?: string;
+  errors?: Record<string, string>;
 };
 
 export const errorController = (
@@ -17,5 +18,6 @@ export const errorController = (
   res.status(statusCode).json({
     status,
     message: err.message || "Something went wrong",
+    ...(err.errors && { errors: err.errors }),
   });
 };
