@@ -1,7 +1,11 @@
 import express from "express";
 import morgan from "morgan";
-import { errorController } from "./middlewares/error.middleware.js";
+
 import { AppError } from "./utils/appError.js";
+import { errorController } from "./middlewares/error.middleware.js";
+
+import authRouter from "./modules/auth/auth.route.js";
+
 export const app = express();
 
 app.use(express.json());
@@ -21,7 +25,9 @@ app.get("/", (req, res) => {
   });
 });
 
-app.all("*", (req, res, next) => {
+app.use("/api/v1/auth", authRouter);
+
+app.use((req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
