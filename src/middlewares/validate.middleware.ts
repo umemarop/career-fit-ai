@@ -5,7 +5,11 @@ import { AppError } from "../utils/appError.js";
 export const validate =
   (schema: z.ZodTypeAny) =>
   (req: Request, res: Response, next: NextFunction) => {
-    const result = schema.safeParse(req.body);
+    const result = schema.safeParse({
+      body: req.body,
+      query: req.query,
+      params: req.params,
+    });
 
     if (!result.success) {
       const errors: Record<string, string> = {};
@@ -21,6 +25,18 @@ export const validate =
 
       return next(new AppError("Validation failed", 400, errors));
     }
-    req.body = result.data;
+
+    const data = result.data as {
+      body?: unknown;
+      params?: unknown;
+      query?: unknown;
+    };
+
+    req.validated = {
+      body: data.body,
+      params: data.params,
+      query: data.query,
+    };
+
     next();
   };
