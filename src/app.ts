@@ -5,6 +5,7 @@ import { AppError } from "./utils/appError.js";
 import { errorController } from "./middlewares/error.middleware.js";
 
 import authRouter from "./modules/auth/auth.route.js";
+import profileRouter from "./modules/profile/profile.route.js";
 
 export const app = express();
 
@@ -26,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/profile", profileRouter);
 
 app.use((req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
