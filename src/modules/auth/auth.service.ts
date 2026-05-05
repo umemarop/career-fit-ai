@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs";
 
 import { prisma } from "../../prisma/client.js";
 import { AppError } from "../../utils/appError.js";
+import { generateToken } from "../../utils/jwt.js";
 import type { RegisterInput, LoginInput } from "./auth.validation.js";
 
 export const registerUser = async (input: RegisterInput) => {
@@ -49,6 +50,25 @@ export const loginUser = async (input: LoginInput) => {
   if (!isPasswordValid) {
     throw new AppError("Invalid email or password", 401);
   }
+
   const { password: _, ...safeUser } = user;
-  return safeUser;
+  const token = generateToken({ userId: user.id, role: user.role });
+  return { user: safeUser, token };
+};
+
+export const getMeUser = async (userId: string) => {
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: {
+      id: true,
+      email: true,
+      role: true,
+      createdAt: true,
+      updatedAt: true,
+    },
+  });
+  if (!user) {
+    throw new AppError("User not found", 404);
+  }
+  return user;
 };
