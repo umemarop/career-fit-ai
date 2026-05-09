@@ -18,12 +18,13 @@ export const registerSchema = z.object({
 });
 export type RegisterInput = z.infer<typeof registerSchema>["body"];
 
-export const loginSchema = z
-  .object({
-    body: z.object({
+export const loginSchema = z.object({
+  body: z
+    .object({
       email: z.string().email("Invalid email format"),
       password: z.string().min(1, "Password is required"),
-    }),
-  })
-  .strict();
+    })
+    .strict(),
+});
+
 export type LoginInput = z.infer<typeof loginSchema>["body"];

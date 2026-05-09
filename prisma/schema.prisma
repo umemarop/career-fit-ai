@@ -65,7 +65,7 @@ model JobAnalysis {
   deletedAt      DateTime?
   
 
-  user           User @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   applications Application[]
   
 }
@@ -89,7 +89,7 @@ model Application {
   updatedAt   DateTime          @updatedAt
   deletedAt   DateTime?
 
-  user     User         @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   analysis JobAnalysis? @relation(fields: [analysisId], references: [id], onDelete: SetNull)
 }
 
