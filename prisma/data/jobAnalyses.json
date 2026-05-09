@@ -27,13 +27,145 @@
     }
   },
   {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "Frontend Developer",
+    "companyName": "PixelWorks",
+    "location": "Sydney",
+    "jobDescription": "React frontend developer role focused on building responsive dashboards with TypeScript.",
+    "fitScore": 62,
+    "recommendation": "CONSIDER",
+    "result": {
+      "matchedSkills": ["React", "TypeScript"],
+      "missingSkills": ["Testing", "Accessibility"],
+      "strengths": [
+        "Good frontend fundamentals",
+        "Comfortable with React components"
+      ],
+      "risks": ["Limited testing experience"],
+      "resumeTips": [
+        "Add React dashboard projects",
+        "Mention responsive UI work"
+      ],
+      "actionPlan": [
+        "Practice Jest and React Testing Library",
+        "Improve accessibility basics"
+      ]
+    }
+  },
+  {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "Cloud Backend Developer",
+    "companyName": "CloudNest",
+    "location": "Brisbane",
+    "jobDescription": "Backend role using Node.js, PostgreSQL, Docker, and AWS deployment workflows.",
+    "fitScore": 78,
+    "recommendation": "APPLY",
+    "result": {
+      "matchedSkills": ["Node.js", "PostgreSQL", "TypeScript"],
+      "missingSkills": ["AWS", "Docker"],
+      "strengths": [
+        "Strong API development",
+        "Good relational database understanding"
+      ],
+      "risks": ["Needs stronger cloud deployment examples"],
+      "resumeTips": [
+        "Highlight API projects",
+        "Add deployment experience to resume"
+      ],
+      "actionPlan": ["Deploy one Node.js app to AWS", "Practice Docker basics"]
+    }
+  },
+  {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "Junior Data Engineer",
+    "companyName": "DataBridge",
+    "location": "Melbourne",
+    "jobDescription": "Entry-level data engineering role using Python, SQL, ETL pipelines, and cloud data tools.",
+    "fitScore": 48,
+    "recommendation": "NOT_RECOMMENDED",
+    "result": {
+      "matchedSkills": ["SQL", "Python"],
+      "missingSkills": ["ETL", "Airflow", "Data Warehousing"],
+      "strengths": ["Basic database knowledge", "Some Python familiarity"],
+      "risks": ["Role is more data-focused than backend-focused"],
+      "resumeTips": ["Add data pipeline projects if targeting this role"],
+      "actionPlan": ["Build a small ETL project", "Learn data warehouse basics"]
+    }
+  },
+  {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "NestJS API Engineer",
+    "companyName": "ApiForge",
+    "location": "Perth",
+    "jobDescription": "NestJS API engineer needed for authentication, REST APIs, Prisma, and PostgreSQL services.",
+    "fitScore": 88,
+    "recommendation": "APPLY",
+    "result": {
+      "matchedSkills": ["TypeScript", "Node.js", "PostgreSQL", "Prisma"],
+      "missingSkills": ["Advanced NestJS", "CI/CD"],
+      "strengths": [
+        "Strong backend TypeScript foundation",
+        "Relevant Prisma and API experience"
+      ],
+      "risks": ["Could improve production deployment knowledge"],
+      "resumeTips": [
+        "Highlight auth and Prisma work",
+        "Mention API validation and error handling"
+      ],
+      "actionPlan": ["Build a NestJS CRUD API", "Add CI/CD pipeline practice"]
+    }
+  },
+  {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "DevOps Engineer",
+    "companyName": "InfraMate",
+    "location": "Adelaide",
+    "jobDescription": "DevOps role focused on Kubernetes, Terraform, CI/CD pipelines, AWS, and monitoring.",
+    "fitScore": 40,
+    "recommendation": "NOT_RECOMMENDED",
+    "result": {
+      "matchedSkills": ["Docker", "AWS basics"],
+      "missingSkills": ["Kubernetes", "Terraform", "Monitoring", "CI/CD"],
+      "strengths": ["Some deployment awareness"],
+      "risks": ["Role requires deeper infrastructure experience"],
+      "resumeTips": ["Do not prioritize this role unless targeting DevOps"],
+      "actionPlan": [
+        "Learn CI/CD fundamentals",
+        "Build a basic AWS deployment pipeline"
+      ]
+    }
+  },
+  {
+    "userEmail": "alex.johnson@test.com",
+    "jobTitle": "Full Stack TypeScript Developer",
+    "companyName": "Buildly",
+    "location": "Brisbane",
+    "jobDescription": "Full stack TypeScript role using React, Node.js, Prisma, PostgreSQL, and REST API development.",
+    "fitScore": 74,
+    "recommendation": "CONSIDER",
+    "result": {
+      "matchedSkills": ["React", "Node.js", "TypeScript", "Prisma"],
+      "missingSkills": ["Testing", "Production deployment"],
+      "strengths": ["Good match across frontend and backend fundamentals"],
+      "risks": ["Needs more full-stack production examples"],
+      "resumeTips": [
+        "Showcase a full-stack project",
+        "Add testing and deployment details"
+      ],
+      "actionPlan": [
+        "Finish one polished full-stack app",
+        "Add automated tests"
+      ]
+    }
+  },
+  {
     "userEmail": "emma.williams@test.com",
     "jobTitle": "Full Stack Developer",
     "companyName": "StartupX",
     "location": "Sydney",
     "jobDescription": "React + Node.js full stack role.",
     "fitScore": 70,
-    "recommendation": "CONSIDER",
+    "recommendation": "NOT_RECOMMENDED",
     "result": {
       "matchedSkills": ["React", "JavaScript"],
       "missingSkills": ["TypeScript", "Testing"],
