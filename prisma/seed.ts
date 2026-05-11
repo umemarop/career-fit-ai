@@ -140,21 +140,22 @@ async function seedApplications(
       throw new Error(`User not found for email: ${app.userEmail}`);
     }
 
-    const analysisId =
-      app.analysisIndex !== undefined
-        ? (analysisIds[app.analysisIndex] ?? null)
+    const jobAnalysisId =
+      app.jobAnalysisIndex !== undefined
+        ? (analysisIds[app.jobAnalysisIndex] ?? null)
         : null;
 
     await prisma.application.create({
       data: {
         userId,
-        analysisId,
+        jobAnalysisId,
         jobTitle: app.jobTitle,
         companyName: app.companyName ?? null,
         location: app.location ?? null,
         jobUrl: app.jobUrl ?? null,
         status: app.status,
         notes: app.notes ?? null,
+        nextStep: app.nextStep ?? null,
         appliedAt: app.appliedAt ? new Date(app.appliedAt) : null,
       },
     });

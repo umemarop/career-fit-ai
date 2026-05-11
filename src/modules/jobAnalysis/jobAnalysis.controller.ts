@@ -28,10 +28,7 @@ export const analyzeGuestJobController = catchAsync(
 
 export const analyzeJobForUserController = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    if (!req.user) {
-      throw new AppError("User is not authenticated", 401);
-    }
-    const userId = req.user.id;
+    const userId = req.user!.id;
     const { jobDescription } = req.validated!
       .body as CreateUserJobAnalysisInput;
     const result = await analyzeJobForUser({ userId, jobDescription });
@@ -44,10 +41,7 @@ export const analyzeJobForUserController = catchAsync(
 
 export const getMyJobAnalysesController = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    if (!req.user) {
-      throw new AppError("User is not authenticated", 401);
-    }
-    const userId = req.user.id;
+    const userId = req.user!.id;
     const query = req.validated!.query as GetMyJobAnalysesQuery;
     const result = await getMyJobAnalysesService(userId, query);
 
@@ -67,11 +61,11 @@ export const getJobAnalysisByIdController = catchAsync(
 
     const { id } = req.validated!.params as GetJobAnalysisByIdParams;
 
-    const analysis = await getJobAnalysisById(req.user.id, id);
+    const result = await getJobAnalysisById(req.user.id, id);
 
     res.status(200).json({
       status: "success",
-      data: analysis,
+      data: result,
     });
   },
 );
