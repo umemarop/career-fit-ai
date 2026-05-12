@@ -9,7 +9,7 @@ import { applicationPaths } from "./application.paths.js";
 
 const serverUrl =
   env.NODE_ENV === "production"
-    ? "https://YOUR_RENDER_URL.onrender.com/api/v1"
+    ? "https://career-fit-ai.onrender.com/api/v1"
     : `http://localhost:${env.PORT}/api/v1`;
 
 const options: swaggerJSDoc.Options = {
