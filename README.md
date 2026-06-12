@@ -1,5 +1,11 @@
 # 🚀 CareerFit AI API
 
+> CareerFit AI v1 is the original backend-focused version of the project.
+>
+> The current production version is CareerFit AI v2:
+>
+> https://career-fit-ai.com
+
 ## 📖 Overview
 
 CareerFit AI API is a production-ready RESTful backend API built with **Node.js**, **Express**, and **TypeScript**.
@@ -19,15 +25,16 @@ It provides:
 
 ## 🌐 Live Demo
 
-API Base URL:  
-https://career-fit-ai.onrender.com
+> Note:
+> CareerFit AI v1 was originally deployed on Render as a backend-focused API project.
+>
+> The original Render PostgreSQL database has expired, so the live API may no longer be available.
+>
+> This repository is preserved as the first version of CareerFit AI before it was rebuilt into CareerFit AI v2.
 
-Swagger Docs:  
-https://career-fit-ai.onrender.com/api-docs
+Current production version:
 
-> ⚠️ Note:
-> This API is hosted on Render free tier.
-> The server may take up to 30–50 seconds to respond on the first request due to cold start.
+https://career-fit-ai.com
 
 ---
 
